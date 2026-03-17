@@ -1,41 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt.br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem Vindo ao VASCO</title>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html> 
+<!-- Informa ao navegador que o documento está usando HTML5 -->
+
+<html lang="pt-br"> 
+<!-- Tag raiz do site. Tudo do site fica dentro dela.
+     lang="pt-br" informa que o idioma é português do Brasil -->
+
+<head> 
+<!-- Parte de configurações técnicas do site (não aparece na tela) -->
+
+    <meta charset="UTF-8"> 
+    <!-- Permite usar acentos, símbolos e caracteres especiais corretamente -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Faz o site se adaptar ao tamanho da tela (celular, tablet, PC) -->
+
+    <title>Bem Vindo ao VASCO</title> 
+    <!-- Nome que aparece na aba do navegador e no Google -->
+
+    <link rel="stylesheet" href="style.css"> 
+    <!-- Conecta o arquivo CSS que vai estilizar o site (cores, tamanho, posição etc) -->
+
     <link rel="shortcut icon" href="img/icons8-cruz-de-malta-16.png" type="image/x-icon">
-</head>
-<body>
-    <footer class="container">
-        <div class="container">
+    <!-- Ícone pequeno que aparece na aba do navegador (favicon) -->
+
+</head> 
+<!-- Fim das configurações -->
+
+<body> 
+<!-- Tudo que aparece visualmente no site começa aqui -->
+
+    <header class="topo"></header> 
+    <!-- Cabeçalho do site.
+         Pode ser usado depois para colocar menu, banner, logo etc -->
+
+    <footer class="container"> 
+    <!-- Rodapé do site.
+         Normalmente contém redes sociais, contato, direitos autorais etc -->
+
+        <div class="container"> 
+        <!-- Div serve como uma "caixa organizadora".
+             Ajuda a posicionar os elementos usando CSS -->
+
             <img src="img/CRVascodaGama.png" alt="Logo do VASCO" class="logo-rodapé">
-            <ul
-                class="social"></ul>
-            <li>
-                <a href="https://www.facebook.com/vascodagama/?locale=pt_BR">
-                    <img src="img/i-facebook.png" alt="facebook"> facebook
-                </a>
-            </li>
-            <li>
-                <a href="https://x.com/VascodaGama">
-                <img src="img/i-twitter.png" alt="twitter"> twitter
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/vascodagama/?hl=pt-br">
-                    <img src="img/i-insta.png" alt="instagra"> instagram
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/Vasco">
-                    <img src="img/i-youtube.png" alt="@Vasco.TV"> @Vasco.TV
-                </a>
-            </li>
-        </div>
-        <footer>
-</footer>
-<header class="topo"> </header>
-</body>
-</html>
+            <!-- Tag de imagem.
+                 src = caminho da imagem
+                 alt = descrição (importante para acessibilidade e Google)
+                 class = nome usado no CSS para estilizar -->
+
+            <ul class="social"> 
+            <!-- Lista não ordenada (lista com bolinhas).
+                 Vai agrupar as redes sociais -->
+
+                <li> 
+                <!-- Primeiro item da lista -->
+                    <a href="https://www.facebook.com/vascodagama/?locale=pt_BR">
+                    <!-- Tag de link.
+                         href = endereço para onde o usuário será levado ao clicar -->
+
+                        <img src="img/i-facebook.png" alt="facebook"> 
+                        <!-- Ícone do Facebook -->
+                        facebook 
+                        <!-- Texto clicável do link -->
+
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/VascodaGama">
+                        <img src="img/i-twitter.png" alt="twitter">
+                        twitter
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/vascodagama/?hl=pt-br">
+                        <img src="img/i-insta.png" alt="instagram">
+                        instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/Vasco">
+                        <img src="img/i-youtube.png" alt="youtube">
+                        youtube
+                    </a>
+                </li>
+
+            </ul> 
+            <!-- Fim da lista -->
+
+        </div> 
+        <!-- Fim da div organizadora -->
+
+    </footer> 
+    <!-- Fim do rodapé -->
+
+</body> 
+<!-- Fim da parte visível do site -->
+
+</html> 
+<!-- Fim do documento HTML -->
