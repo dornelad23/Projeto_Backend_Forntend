@@ -1,114 +1,63 @@
-<!DOCTYPE html> 
-<!-- Informa ao navegador que o documento está usando HTML5 -->
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<html lang="pt-br"> 
-<!-- Tag raiz do site. Tudo do site fica dentro dela.
-     lang="pt-br" informa que o idioma é português do Brasil -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo ao Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<head> 
-<!-- Parte de configurações técnicas do site (não aparece na tela) -->
+<body>
+    <footer class="topo">
+        <div class="container">
+            <img src="img/CRVascodaGama.png" alt="Logo Seduc" class="logo-rodape">
+            <ul class="social">
 
-    <meta charset="UTF-8"> 
-    <!-- Permite usar acentos, símbolos e caracteres especiais corretamente -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <!-- Faz o site se adaptar ao tamanho da tela (celular, tablet, PC) -->
-
-    <title>Bem Vindo ao VASCO</title> 
-    <!-- Nome que aparece na aba do navegador e no Google -->
-
-    <link rel="stylesheet" href="style.css"> 
-    <!-- Conecta o arquivo CSS que vai estilizar o site (cores, tamanho, posição etc) -->
-
-    <link rel="shortcut icon" href="img/icons8-cruz-de-malta-16.png" type="image/x-icon">
-    <!-- Ícone pequeno que aparece na aba do navegador (favicon) -->
-
-</head> 
-<!-- Fim das configurações -->
-
-<body> 
-<!-- Tudo que aparece visualmente no site começa aqui -->
-
-    <header class="topo"></header> 
-    <!-- Cabeçalho do site.
-         Pode ser usado depois para colocar menu, banner, logo etc -->
-
-    <footer class="container"> 
-    <!-- Rodapé do site.
-         Normalmente contém redes sociais, contato, direitos autorais etc -->
-
-        <div class="container"> 
-        <!-- Div serve como uma "caixa organizadora".
-             Ajuda a posicionar os elementos usando CSS -->
-
-            <img src="img/CRVascodaGama.png" alt="Logo do VASCO" class="logo-rodapé">
-            <!-- Tag de imagem.
-                 src = caminho da imagem
-                 alt = descrição (importante para acessibilidade e Google)
-                 class = nome usado no CSS para estilizar -->
-
-            <ul class="social"> 
-            <!-- Lista não ordenada (lista com bolinhas).
-                 Vai agrupar as redes sociais -->
-
-                <li> 
-                <!-- Primeiro item da lista -->
-                    <a href="https://www.facebook.com/vascodagama/?locale=pt_BR">
-                    <!-- Tag de link.
-                         href = endereço para onde o usuário será levado ao clicar -->
-
-                        <img src="img/i-facebook.png" alt="facebook"> 
-                        <!-- Ícone do Facebook -->
-                        facebook 
-                        <!-- Texto clicável do link -->
-
+                <li>
+                    <a href="http://facebook.com">
+                        <img src="img/i-facebook.png" alt="Facebook"> Facebook
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://x.com/VascodaGama">
-                        <img src="img/i-twitter.png" alt="twitter">
-                        twitter
+                    <a href="http://twitter.com/">
+                        <img src="img/i-twitter.png" alt="Twitter"> Twitter
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.instagram.com/vascodagama/?hl=pt-br">
-                        <img src="img/i-insta.png" alt="instagram">
-                        instagram
+                    <a href="http://instagram.com/">
+                        <img src="img/i-insta.png" alt="Instagram"> Instagram
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.youtube.com/Vasco">
-                        <img src="img/i-youtube.png" alt="youtube">
-                        youtube
+                    <a href="http://youtube.com/">
+                        <img src="img/i-youtube.png" alt="Youtube"> Youtube
                     </a>
                 </li>
 
-            </ul> 
-            <!-- Fim da lista -->
-
-        </div> 
-        <!-- Fim da div organizadora -->
-
-    </footer> 
-    <!-- Fim do rodapé -->
-
-<header class="topo">
-    <div id="Logo_vasco">
+                <li>
+                    <a href="http://linkedin.com/">
+                        <img src="img/i-linkedin.png" alt="Linkedin"> Linkedin
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     
-    </div>
+<header class="topo">
 
-    <div id="Logo_Imagem">
+<div id="Logo_Educacao"></div>
 
-        <img src="img/logo_dourado_vasco.png" alt="Logo Vasco">
+<div id="Logo_Imagem">
 
-    </div>
+    <img src="img/logo_dourado_vasco.png" alt="Logo Governo">
 
-    <div id="Logo_Vas">
+</div>
 
-    </div>
+<div id="Logo_Gov"></div>
 
 </header>
 
@@ -118,39 +67,41 @@
 
     <form id="frmLogin" class="form">
 
-    <div class="field">
+<div class="field">
 
-        <label>Email</label>
+    <label>Email</label>
 
-        <input class="input" type="email" id="email" placeholder="Insira o seu e-mail">
+    <input class="input" type="email" id="email" placeholder="Insira o seu e-mail">
 
-    </div>
-
-    <div class="field">
-
-        <label>Senha</label>
-        <input class="input" type="password" id="senha" placeholder="Insira a sua senha">
-
-    </div>
-
-    <button class="btn" type="submit">
-
-        <span class="btn-text">Entrar</span>
-        <span class="loader-dots">
-        <span></span>
-        <span></span>
-        <span></span>
-
-    </span>
- 
-    </button>
-
-    </form>
-    
 </div>
 
-</body> 
-<!-- Fim da parte visível do site -->
+<div class="field">
 
-</html> 
-<!-- Fim do documento HTML -->
+    <label>Senha</label>
+    <input class="input" type="password" id="senha" placeholder="Insira a sua senha">
+
+</div>
+
+<button class="btn" type="submit">
+
+    <span class="btn-text">Entrar</span>
+    <span class="loader-dots">
+    <span></span>
+    <span></span>
+    <span></span>
+    
+</span>
+
+</button>
+
+<div class="msg" id="msg"></div>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
